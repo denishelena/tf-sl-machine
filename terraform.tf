@@ -16,7 +16,7 @@ module "ec2" {
         volume_type = "gp2"  
       },
       {
-        device_name = "/dev/sdg"
+        device_name = "/dev/sdh"
         volume_size = "10"
         volume_type = "gp2"  
       }
@@ -31,16 +31,6 @@ module "sg" {
     {
       from_port = "80"
       to_port   = "80"
-    #  cidr = ["0.0.0.0/0"]
-    },
-    {
-      from_port = "443"
-      to_port   = "443"
-    #  cidr = ["0.0.0.0/0"]
-    },
-    {
-      from_port = "22"
-      to_port   = "22"
     #  cidr = ["0.0.0.0/0"]
     }
   ]
